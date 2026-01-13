@@ -6,7 +6,11 @@ import os
 import os.path as osp
 import argparse
 import pandas as pd
-from google.cloud import bigquery
+try:
+    # Optional: kept for compatibility with older setups; not required for Spider2-Snow SQL eval.
+    from google.cloud import bigquery  # type: ignore
+except Exception:  # pragma: no cover
+    bigquery = None  # type: ignore
 import shutil
 import sqlite3
 from tqdm import tqdm
@@ -41,8 +45,13 @@ class TeeOutput:
     def close(self):
         self.file.close()
 
-sys.stdout = TeeOutput('log.txt')
-sys.stderr = sys.stdout
+def enable_tee_output(log_path: str = "log.txt") -> None:
+    """
+    Tee stdout/stderr to a file. This used to run at import-time, which made `evaluate.py`
+    unsafe to import. Keep it callable so library users can opt in.
+    """
+    sys.stdout = TeeOutput(log_path)
+    sys.stderr = sys.stdout
 
 TOTAL_GB_PROCESSED = 0.0
 GB_LOCK = Lock()  
@@ -210,6 +219,68 @@ def extract_sql_query(pred_sql_query):
     if match:
         return match.group(1).strip()
     return pred_sql_query
+
+
+def _default_eval_suite_dir() -> Path:
+    return Path(__file__).resolve().parent
+
+
+def _default_spider2_metadata_path() -> Path:
+    # Spider2-Snow metadata lives alongside evaluate.py in this repo.
+    return _default_eval_suite_dir() / "spider2-snow.jsonl"
+
+
+def _default_gold_dir() -> Path:
+    return _default_eval_suite_dir() / "gold"
+
+
+def run_spider2sql_evaluation(
+    *,
+    mode: str,
+    result_dir: str,
+    gold_dir: str | None = None,
+    timeout: int = 60,
+    max_workers: int = 20,
+    temp_dir: str | None = None,
+    save_correct_ids: bool = False,
+    quiet: bool = False,
+) -> dict:
+    """
+    Library entrypoint: evaluate a folder of predicted SQLs (mode='sql') or predicted CSVs
+    (mode='exec_result') against Spider2-Snow gold data.
+
+    Returns a dict containing aggregate metrics and per-instance results.
+    """
+    if gold_dir is None:
+        gold_dir = str(_default_gold_dir())
+
+    args = argparse.Namespace(
+        mode=mode,
+        result_dir=result_dir,
+        gold_dir=gold_dir,
+        is_sql_debug=False,
+        max_workers=max_workers,
+        timeout=timeout,
+        temp_dir=temp_dir,
+        quiet=quiet,
+        save_correct_ids=save_correct_ids,
+    )
+
+    auto_temp = False
+    if args.temp_dir:
+        temp_path = Path(args.temp_dir).expanduser().resolve()
+        if temp_path.exists():
+            shutil.rmtree(temp_path)
+        temp_path.mkdir(parents=True, exist_ok=True)
+    else:
+        temp_path = Path(tempfile.mkdtemp(prefix="evaluate_"))
+        auto_temp = True
+
+    try:
+        return evaluate_spider2sql(args, temp_path)
+    finally:
+        if auto_temp:
+            shutil.rmtree(temp_path, ignore_errors=True)
 
 
 
@@ -403,7 +474,7 @@ def evaluate_spider2sql(args, temp_dir: Path):
     pred_result_dir = args.result_dir
     
     eval_standard_dict = load_jsonl_to_dict(os.path.join(args.gold_dir, "spider2snow_eval.jsonl"))
-    spider2sql_metadata = load_jsonl_to_dict("../spider2-snow.jsonl")
+    spider2sql_metadata = load_jsonl_to_dict(str(_default_spider2_metadata_path()))
     
     result_csv_dir = None
     if mode == "sql":
@@ -427,7 +498,7 @@ def evaluate_spider2sql(args, temp_dir: Path):
     eval_ids = list(set(gold_ids).intersection(pred_ids))
     eval_ids = sorted(eval_ids)  # sorted, for reproduce result
     
-    output_results = []
+    output_results: list[dict] = []
     max_workers = min(args.max_workers if hasattr(args, 'max_workers') else 8, len(eval_ids))
 
     if mode == "sql":
@@ -467,16 +538,34 @@ def evaluate_spider2sql(args, temp_dir: Path):
                 result = future.result()
                 output_results.append(result)
 
-    print({item['instance_id']: item['score'] for item in output_results})  
-    correct_examples = sum([item['score'] for item in output_results]) 
+    correct_examples = sum([item['score'] for item in output_results])
+    total_examples = len(output_results) if output_results else 0
+    pass_rate = (correct_examples / total_examples * 100.0) if total_examples else 0.0
 
-    print(f"Final score: {correct_examples / len(output_results)}, Correct examples: {correct_examples}, Total examples: {len(output_results)}")
-    print(f"Real score: {correct_examples / 547}, Correct examples: {correct_examples}, Total examples: 547")
-    
-    if mode == "sql" and result_csv_dir:
-        print(f"Execution results saved to: {result_csv_dir}")
-    
-    csv_file_path = save_correct_ids_to_csv(output_results, pred_result_dir)
+    result = {
+        "score": float(correct_examples),
+        "max_score": int(total_examples),
+        "pass_rate": float(pass_rate),
+        "instances": {item["instance_id"]: item for item in output_results},
+        "result_csv_dir": result_csv_dir,
+    }
+
+    quiet = bool(getattr(args, "quiet", False))
+    if not quiet:
+        print({item['instance_id']: item['score'] for item in output_results})
+        if total_examples:
+            print(
+                f"Final score: {correct_examples / total_examples}, Correct examples: {correct_examples}, Total examples: {total_examples}"
+            )
+        print(f"Real score: {correct_examples / 547}, Correct examples: {correct_examples}, Total examples: 547")
+        if mode == "sql" and result_csv_dir:
+            print(f"Execution results saved to: {result_csv_dir}")
+
+    if bool(getattr(args, "save_correct_ids", True)) and output_results:
+        # Default behavior preserved for CLI (save_correct_ids defaults to True there).
+        save_correct_ids_to_csv(output_results, pred_result_dir)
+
+    return result
 
 
 
@@ -488,6 +577,13 @@ if __name__ == "__main__":
     parser.add_argument("--is_sql_debug", action="store_true", default=False)
     parser.add_argument("--max_workers", type=int, default=20, help="Maximum number of worker threads")
     parser.add_argument("--timeout", type=int, default=60, help="SQL execution timeout in seconds")
+    parser.add_argument("--quiet", action="store_true", default=False, help="Reduce stdout output")
+    parser.add_argument(
+        "--save_correct_ids",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Save correct instance_ids to a CSV next to result_dir",
+    )
     parser.add_argument(
         "--temp_dir",
         type=str,
@@ -495,6 +591,9 @@ if __name__ == "__main__":
         help="Optional working directory for temporary files. Defaults to a unique directory per run.",
     )
     args = parser.parse_args()
+
+    # Preserve previous behavior when running as a script.
+    enable_tee_output("log.txt")
     
     auto_temp = False
     if args.temp_dir:

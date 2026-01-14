@@ -1,0 +1,44 @@
+[green_agent]
+## Fill in your green agent's AgentBeats ID (from your agent page on agentbeats.dev)
+agentbeats_id = "REPLACE_WITH_YOUR_GREEN_AGENTBEATS_ID"
+
+## Environment variables passed to the green agent container.
+## The Spider2SQL evaluator executes SQL on Snowflake, so credentials are required.
+## Use ${VAR_NAME} for secrets so submitters can set them as GitHub Secrets.
+[green_agent.env]
+SNOWFLAKE_USER = "${SNOWFLAKE_USER}"
+SNOWFLAKE_PASSWORD = "${SNOWFLAKE_PASSWORD}"
+SNOWFLAKE_ACCOUNT = "${SNOWFLAKE_ACCOUNT}"
+
+# Optional (non-secret) defaults; override if your Snowflake setup differs.
+SNOWFLAKE_ROLE = "PARTICIPANT"
+SNOWFLAKE_WAREHOUSE = "COMPUTE_WH_PARTICIPANT"
+
+LOG_LEVEL = "INFO"
+
+[[participants]]
+agentbeats_id = ""
+## The single required participant role for this benchmark.
+## This is the target (purple) agent being evaluated.
+name = "agent"
+env = {}
+
+[config]
+## Assessment parameters passed to the Spider2SQL evaluator at the start of each run.
+## These map to keys read in `evaluator/src/spider2sql_evaluator/agent.py`.
+
+# Dataset split: "dev25" (quick, default) or "full" (longer).
+split = "dev25"
+
+# Per-instance timeout (seconds) used for participant calls and Snowflake statement timeout.
+timeout = 60
+
+# How many instances to process concurrently.
+max_concurrency = 8
+
+# Recommended for reproducibility/isolation: each task gets a fresh conversation.
+new_conversation_per_task = true
+
+# Optional filters:
+# num_tasks = 5
+# task_ids = ["SPIDER2_SNOW_0001", "SPIDER2_SNOW_0002"]

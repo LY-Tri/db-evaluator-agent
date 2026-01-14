@@ -1,0 +1,16 @@
+{
+  "summary": "Placeholder results to unblock leaderboard refresh. Run the scenario to generate real results.",
+  "participants": {
+    "agent": "placeholder-agentbeats-id"
+  },
+  "results": [
+    {
+      "split": "dev25",
+      "num_instances": 0,
+      "score": 0,
+      "max_score": 0,
+      "pass_rate": 0.0,
+      "time_used_sec": 0.0
+    }
+  ]
+}

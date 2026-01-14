@@ -37,6 +37,13 @@ See `examples/spider2sql/` for a runnable AgentBeats scenario.
    - `SNOWFLAKE_ACCOUNT`
    - `SNOWFLAKE_ROLE` (optional, default `PARTICIPANT`)
    - `SNOWFLAKE_WAREHOUSE` (optional, default `COMPUTE_WH_PARTICIPANT`)
+   - If you keep these in a repo-local `.env`, you can export them with:
+
+```bash
+set -a
+source ./.env
+set +a
+```
 2. Start your target agent (purple agent) at the endpoint referenced by the scenario (default `http://127.0.0.1:9019`).
 3. Run:
 

@@ -167,6 +167,15 @@ def get_snowflake_credentials():
 
 def get_snowflake_sql_result(sql_query, database_id, is_save, save_dir=None, file_name="result.csv", timeout=30, instance_id=None):
     snowflake_credential = get_snowflake_credentials()
+    missing = [k for k in ("user", "password", "account") if not snowflake_credential.get(k)]
+    if missing:
+        msg = (
+            "Missing Snowflake credentials in environment variables. "
+            "Please set: SNOWFLAKE_USER, SNOWFLAKE_PASSWORD, SNOWFLAKE_ACCOUNT"
+        )
+        prefix = f"[{instance_id}] " if instance_id else ""
+        print(f"{prefix}{msg}")
+        return False, msg
     connection_kwargs = {k: v for k, v in snowflake_credential.items() if k != "session_parameters"}
     session_parameters = snowflake_credential.get("session_parameters", {}).copy()
     session_parameters["STATEMENT_TIMEOUT_IN_SECONDS"] = timeout

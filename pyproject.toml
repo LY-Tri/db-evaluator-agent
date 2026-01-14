@@ -10,7 +10,9 @@ dependencies = [
     "uvicorn>=0.38.0",
     "pandas>=2.3.3",
     "snowflake-connector-python>=4.2.0",
-    "python-dotenv>=1.2.1"
+    "python-dotenv>=1.2.1",
+    "tqdm>=4.67.1",
+    "nest-asyncio>=1.6.0",
 ]
 
 [project.optional-dependencies]

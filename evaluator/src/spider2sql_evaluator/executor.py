@@ -5,7 +5,12 @@ from a2a.types import InvalidRequestError, TaskState, UnsupportedOperationError
 from a2a.utils import new_agent_text_message, new_task
 from a2a.utils.errors import ServerError
 
-from agent import Agent
+try:
+    # Package import (preferred)
+    from spider2sql_evaluator.agent import Agent
+except Exception:  # pragma: no cover
+    # Script execution fallback
+    from agent import Agent
 
 
 TERMINAL_STATES = {

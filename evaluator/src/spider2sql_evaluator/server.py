@@ -8,7 +8,12 @@ from a2a.types import AgentCapabilities, AgentCard, AgentSkill
 
 
 def main() -> None:
-    from executor import Executor
+    try:
+        # Package import (preferred)
+        from spider2sql_evaluator.executor import Executor
+    except Exception:  # pragma: no cover
+        # Script execution fallback
+        from executor import Executor
 
     parser = argparse.ArgumentParser(description="Run the Spider2SQL evaluator (green agent).")
     parser.add_argument("--host", type=str, default="127.0.0.1", help="Host to bind the server")

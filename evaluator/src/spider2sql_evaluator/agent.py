@@ -2,6 +2,7 @@ import asyncio
 import importlib.util
 import json
 import logging
+import os
 import tempfile
 import time
 from pathlib import Path
@@ -14,11 +15,22 @@ from a2a.server.tasks import TaskUpdater
 from a2a.types import DataPart, Message, Part, TaskState, TextPart
 from a2a.utils import get_message_text, new_agent_text_message
 
-from messenger import Messenger
+try:
+    # Package import (preferred)
+    from spider2sql_evaluator.messenger import Messenger
+except Exception:  # pragma: no cover
+    # Script execution fallback
+    from messenger import Messenger
 
 logger = logging.getLogger("spider2sql_evaluator")
-logging.basicConfig(level=logging.INFO)
-nest_asyncio.apply()
+if not logging.getLogger().handlers:
+    logging.basicConfig(level=logging.INFO)
+
+# NOTE: Applying nest_asyncio inside a server process can be surprising and is
+# usually only needed in notebook-like nested event-loop environments.
+# Opt-in via env var if someone really needs it.
+if str(os.environ.get("SPIDER2SQL_EVAL_NEST_ASYNCIO", "")).lower() in {"1", "true", "yes"}:
+    nest_asyncio.apply()
 
 
 # /.../repo/evaluator/src/spider2sql_evaluator/agent.py -> repo root is parents[3]
@@ -160,12 +172,24 @@ class Agent:
         cfg = request.config or {}
         split = str(cfg.get("split", "dev25"))
         task_ids = cfg.get("task_ids")
-        if task_ids is not None and not isinstance(task_ids, list):
-            task_ids = [str(task_ids)]
+        # Normalize task_ids to list[str] if provided.
+        if task_ids is not None:
+            if not isinstance(task_ids, list):
+                task_ids = [task_ids]
+            task_ids = [str(x) for x in task_ids]
         num_tasks = cfg.get("num_tasks")
         num_tasks = int(num_tasks) if num_tasks is not None else None
         timeout = int(cfg.get("timeout", 60))
         max_concurrency = int(cfg.get("max_concurrency", 8))
+        # By default, isolate each benchmark instance into a fresh conversation to
+        # avoid cross-instance leakage and concurrency races.
+        new_conversation_per_task = bool(cfg.get("new_conversation_per_task", True))
+        if not new_conversation_per_task and max_concurrency > 1:
+            # A shared conversation context cannot be safely used with concurrency.
+            logger.warning(
+                "new_conversation_per_task=false with max_concurrency>1; forcing max_concurrency=1 to avoid context races."
+            )
+            max_concurrency = 1
 
         agent_url = str(request.participants["agent"])
 
@@ -197,7 +221,7 @@ class Agent:
                     outputs = await self.messenger.talk_to_agent(
                         message=prompt,
                         url=agent_url,
-                        new_conversation=False,
+                        new_conversation=new_conversation_per_task,
                         timeout=timeout,
                     )
                     sql_or_text = _extract_sql_from_target_response(outputs)

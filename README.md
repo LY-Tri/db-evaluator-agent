@@ -11,7 +11,6 @@ This repo contains **AgentBeats-compatible A2A agents** and utilities for evalua
   - `executor.py`: task lifecycle + per-context agent state
   - `agent.py`: loads Spider2 tasks, calls target agent for SQL, runs evaluation, emits a result artifact
   - `messenger.py`: A2A client helper to talk to the target agent
-- **`examples/`**: reference AgentBeats scenarios (e.g. `examples/tau2/`, `examples/debate/`, `examples/spider2sql/`)
 
 ### Spider2SQL benchmark (A2A evaluator agent)
 
@@ -26,35 +25,3 @@ The Spider2SQL evaluator is a **green agent** that evaluates a target agent by:
 - Returning an A2A artifact named `Result` containing:
   - a human-readable summary (TextPart)
   - machine-readable metrics + per-instance results (DataPart)
-
-### Running the Spider2SQL scenario
-
-See `examples/spider2sql/` for a runnable AgentBeats scenario.
-
-1. Set Snowflake credentials (required for `--mode sql` evaluation):
-   - `SNOWFLAKE_USER`
-   - `SNOWFLAKE_PASSWORD`
-   - `SNOWFLAKE_ACCOUNT`
-   - `SNOWFLAKE_ROLE` (optional, default `PARTICIPANT`)
-   - `SNOWFLAKE_WAREHOUSE` (optional, default `COMPUTE_WH_PARTICIPANT`)
-   - If you keep these in a repo-local `.env`, you can export them with:
-
-```bash
-set -a
-source ./.env
-set +a
-```
-2. Start your target agent (purple agent) at the endpoint referenced by the scenario (default `http://127.0.0.1:9019`).
-3. Run:
-
-```bash
-uv run agentbeats-run examples/spider2sql/scenario.toml
-```
-
-The scenario starts the green evaluator via:
-- `python evaluator/src/spider2sql_evaluator/server.py --host 127.0.0.1 --port 9010`
-
-### Other included examples
-
-- **Tau2**: `examples/tau2/` (reference green+purple A2A agents and scenario wiring)
-- **Debate**: `examples/debate/` (multi-agent evaluation pattern)

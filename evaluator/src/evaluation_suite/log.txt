@@ -1,284 +1,0 @@
-Evaluating SQL:   0%|          | 0/543 [00:00<?, ?it/s][sf040] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 30 at position 98 unexpected '='.
-[sf013] Error occurred while fetching data: 003030 (02000): SQL compilation error:
-Shared database is no longer available for use. It will need to be re-created if and when the publisher makes it available again.
-[sf_bq003] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'GA360.GOOGLE_ANALYTICS_SAMPLE.GA_SESSIONS_2017' does not exist or not authorized.
-[sf010] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 8 at position 45 unexpected ';'.
-[sf029] Error occurred while fetching data: 003030 (02000): SQL compilation error:
-Shared database is no longer available for use. It will need to be re-created if and when the publisher makes it available again.
-[sf018] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 11 at position 32 unexpected ';'.
-[sf002] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 32 at position 74 unexpected '='.
-[sf035] No data found for the specified query.
-[sf003] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'GLOBAL_GOVERNMENT.CYBERSYN.STATE_INDEX' does not exist or not authorized.
-Evaluating SQL:   0%|          | 1/543 [00:04<42:36,  4.72s/it]Evaluating SQL:   2%|1         | 9/543 [00:04<03:29,  2.54it/s][sf041] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 19 at position 4
-invalid identifier 'NAME'
-[sf001] No data found for the specified query.
-[sf_bq007] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 34 at position 77 unexpected ';'.
-Evaluating SQL:   2%|2         | 13/543 [00:05<02:53,  3.06it/s]Evaluating SQL:   3%|3         | 18/543 [00:06<02:00,  4.35it/s]Evaluating SQL:   4%|3         | 21/543 [00:06<01:36,  5.41it/s]Evaluating SQL:   4%|4         | 23/543 [00:07<02:09,  4.03it/s]Evaluating SQL:   5%|4         | 25/543 [00:07<01:49,  4.72it/s]Evaluating SQL:   5%|5         | 28/543 [00:07<01:27,  5.87it/s]Evaluating SQL:   6%|5         | 30/543 [00:08<01:42,  5.02it/s]Evaluating SQL:   6%|5         | 32/543 [00:08<01:47,  4.74it/s][sf_bq034] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-parse error line 24 at position 15 near '<EOF>'.
-syntax error line 24 at position 15 unexpected '<EOF>'.
-Evaluating SQL:   6%|6         | 33/543 [00:09<02:04,  4.08it/s]Evaluating SQL:   6%|6         | 35/543 [00:09<01:37,  5.21it/s]Evaluating SQL:   7%|6         | 36/543 [00:09<01:51,  4.57it/s]Evaluating SQL:   7%|6         | 37/543 [00:10<02:18,  3.65it/s]Evaluating SQL:   7%|6         | 38/543 [00:10<02:28,  3.40it/s][sf_bq041] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 7 at position 57 unexpected ';'.
-Evaluating SQL:   7%|7         | 39/543 [00:11<02:44,  3.07it/s]Evaluating SQL:   7%|7         | 40/543 [00:12<04:16,  1.96it/s]Evaluating SQL:   8%|7         | 41/543 [00:13<07:04,  1.18it/s]Evaluating SQL:   8%|7         | 42/543 [00:14<05:57,  1.40it/s]Evaluating SQL:   8%|7         | 43/543 [00:14<05:21,  1.56it/s][sf_bq046] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 18 at position 30 unexpected ';'.
-Evaluating SQL:   8%|8         | 45/543 [00:15<03:51,  2.15it/s]Evaluating SQL:   9%|8         | 47/543 [00:15<03:13,  2.57it/s]Evaluating SQL:   9%|8         | 48/543 [00:16<03:24,  2.42it/s]Evaluating SQL:   9%|9         | 49/543 [00:16<03:26,  2.39it/s][sf_bq051] No data found for the specified query.
-Evaluating SQL:   9%|9         | 50/543 [00:17<04:27,  1.84it/s]Evaluating SQL:   9%|9         | 51/543 [00:17<03:39,  2.24it/s][sf_bq054] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 9 at position 43 unexpected ';'.
-Evaluating SQL:  10%|9         | 52/543 [00:18<04:03,  2.02it/s][sf_bq057] No data found for the specified query.
-Evaluating SQL:  10%|9         | 54/543 [00:19<03:49,  2.13it/s]Evaluating SQL:  10%|#         | 56/543 [00:19<02:45,  2.94it/s][sf_bq058] No data found for the specified query.
-Evaluating SQL:  10%|#         | 57/543 [00:20<03:42,  2.18it/s]Evaluating SQL:  11%|#         | 59/543 [00:21<03:34,  2.25it/s]Evaluating SQL:  11%|#1        | 60/543 [00:21<03:06,  2.59it/s]Evaluating SQL:  11%|#1        | 61/543 [00:21<02:34,  3.12it/s]Evaluating SQL:  11%|#1        | 62/543 [00:22<03:27,  2.32it/s][sf_bq065] Error occurred while fetching data: 002031 (42601): SQL compilation error:
-Unsupported subquery type cannot be evaluated
-Evaluating SQL:  12%|#1        | 63/543 [00:23<05:50,  1.37it/s]Evaluating SQL:  12%|#1        | 64/543 [00:24<04:45,  1.68it/s]Evaluating SQL:  12%|#1        | 65/543 [00:24<04:54,  1.62it/s]Evaluating SQL:  12%|#2        | 66/543 [00:25<05:14,  1.52it/s]Evaluating SQL:  12%|#2        | 67/543 [00:25<04:41,  1.69it/s][sf_bq010] No data found for the specified query.
-Evaluating SQL:  13%|#2        | 68/543 [00:26<04:50,  1.64it/s][sf_bq068] No data found for the specified query.
-[sf_bq043] No data found for the specified query.
-Evaluating SQL:  13%|#2        | 69/543 [00:26<04:05,  1.93it/s][sf_bq069] Error occurred while fetching data: 001065 (22023): SQL compilation error:
-Function TRY_CAST cannot be used with arguments of types VARIANT and FLOAT
-[sf_bq071] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-parse error line 32 at position 64 near '<EOF>'.
-syntax error line 32 at position 64 unexpected '<EOF>'.
-[sf_bq073] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'CENSUS_BUREAU_ACS_2.GEO_US_BOUNDARIES.STATE' does not exist or not authorized.
-Evaluating SQL:  13%|#3        | 71/543 [00:27<03:19,  2.36it/s]Evaluating SQL:  13%|#3        | 72/543 [00:27<02:51,  2.74it/s]Evaluating SQL:  14%|#3        | 74/543 [00:27<02:01,  3.87it/s][sf_bq070] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 3 at position 4
-invalid identifier '"idc_slide_id"'
-[sf_bq075] Error occurred while fetching data: 000979 (42601): SQL compilation error:
-[CPSAAT18."year"] is not a valid group by expression
-Evaluating SQL:  14%|#3        | 75/543 [00:28<02:27,  3.17it/s]Evaluating SQL:  14%|#3        | 76/543 [00:28<02:07,  3.67it/s]Evaluating SQL:  14%|#4        | 77/543 [00:28<01:47,  4.34it/s]Evaluating SQL:  15%|#4        | 79/543 [00:28<01:23,  5.56it/s][sf_bq079] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 47 at position 78 unexpected ';'.
-syntax error line 47 at position 89 unexpected '.'.
-syntax error line 51 at position 31 unexpected 'pa'.
-syntax error line 51 at position 73 unexpected '&'.
-Evaluating SQL:  15%|#4        | 80/543 [00:29<01:52,  4.11it/s][sf_bq083] No data found for the specified query.
-[sf_bq081] No data found for the specified query.
-Evaluating SQL:  15%|#5        | 82/543 [00:29<01:22,  5.59it/s][sf_bq084] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 4 at position 29 unexpected ';'.
-Evaluating SQL:  15%|#5        | 83/543 [00:29<01:22,  5.57it/s]Evaluating SQL:  16%|#5        | 86/543 [00:29<00:51,  8.87it/s][sf_bq086] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 8 at position 18 unexpected ';'.
-Evaluating SQL:  16%|#6        | 88/543 [00:30<01:04,  7.02it/s][sf_bq089] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 4 at position 4
-invalid identifier '"name"'
-[sf_bq091] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 7 at position 30 unexpected '&'.
-syntax error line 7 at position 33 unexpected ';'.
-syntax error line 8 at position 15 unexpected 'FLATTEN'.
-syntax error line 8 at position 23 unexpected 'input'.
-Evaluating SQL:  17%|#6        | 90/543 [00:30<00:56,  8.00it/s]Evaluating SQL:  17%|#6        | 92/543 [00:30<00:56,  8.05it/s]Evaluating SQL:  17%|#7        | 93/543 [00:30<00:59,  7.62it/s]Evaluating SQL:  17%|#7        | 94/543 [00:30<00:59,  7.50it/s]Evaluating SQL:  17%|#7        | 95/543 [00:31<01:33,  4.81it/s]Evaluating SQL:  18%|#7        | 96/543 [00:31<01:21,  5.47it/s][sf_bq098] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 14 at position 32 unexpected ';'.
-Evaluating SQL:  18%|#7        | 97/543 [00:31<01:32,  4.80it/s]Evaluating SQL:  18%|#8        | 98/543 [00:31<01:25,  5.20it/s][sf_bq101] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'GITHUB_REPOS.PUBLIC.SAMPLE_FILES' does not exist or not authorized.
-Evaluating SQL:  18%|#8        | 99/543 [00:32<01:50,  4.01it/s][sf_bq102] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 4 at position 28 unexpected '&'.
-syntax error line 4 at position 31 unexpected ';'.
-Evaluating SQL:  19%|#8        | 101/543 [00:32<01:21,  5.39it/s][sf_bq103] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 28 at position 29
-invalid identifier 'VE."vep"'
-Evaluating SQL:  19%|#8        | 102/543 [00:32<01:31,  4.83it/s][sf_bq105] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 5 at position 8
-invalid identifier 'P."population"'
-Evaluating SQL:  19%|#8        | 103/543 [00:33<01:42,  4.29it/s]Evaluating SQL:  19%|#9        | 104/543 [00:33<01:33,  4.70it/s][sf_bq107] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 14 at position 54 unexpected ';'.
-Evaluating SQL:  19%|#9        | 105/543 [00:33<02:07,  3.43it/s]Evaluating SQL:  20%|#9        | 106/543 [00:34<01:53,  3.86it/s]Evaluating SQL:  20%|#9        | 107/543 [00:34<01:48,  4.02it/s][sf_bq111] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'TCGA_MITELMAN.PROD.CASEINFO' does not exist or not authorized.
-Evaluating SQL:  20%|##        | 109/543 [00:34<01:35,  4.53it/s][sf_bq114] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'OPENAQ.OPENAQ.MEASUREMENTS' does not exist or not authorized.
-Evaluating SQL:  20%|##        | 110/543 [00:35<02:10,  3.31it/s]Evaluating SQL:  20%|##        | 111/543 [00:36<03:10,  2.26it/s]Evaluating SQL:  21%|##        | 112/543 [00:36<02:59,  2.41it/s]Evaluating SQL:  21%|##        | 113/543 [00:39<08:56,  1.25s/it]Evaluating SQL:  21%|##        | 114/543 [00:41<10:53,  1.52s/it]Evaluating SQL:  21%|##1       | 115/543 [00:43<10:57,  1.54s/it][sf_bq121] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 5 at position 27 unexpected ';'.
-syntax error line 5 at position 59 unexpected '/'.
-syntax error line 5 at position 81 unexpected ')'.
-syntax error line 15 at position 78 unexpected ';'.
-Evaluating SQL:  21%|##1       | 116/543 [00:44<09:37,  1.35s/it]Evaluating SQL:  22%|##1       | 117/543 [00:45<08:48,  1.24s/it]Evaluating SQL:  22%|##1       | 118/543 [00:46<08:27,  1.19s/it]Evaluating SQL:  22%|##1       | 119/543 [00:47<08:01,  1.14s/it]Evaluating SQL:  22%|##2       | 120/543 [00:51<13:04,  1.85s/it]Evaluating SQL:  22%|##2       | 121/543 [00:54<16:06,  2.29s/it]Evaluating SQL:  22%|##2       | 122/543 [00:55<13:04,  1.86s/it][sf_bq048] No data found for the specified query.
-Evaluating SQL:  23%|##2       | 123/543 [01:00<19:53,  2.84s/it]Evaluating SQL:  23%|##2       | 124/543 [01:01<15:29,  2.22s/it]Evaluating SQL:  23%|##3       | 125/543 [01:01<11:04,  1.59s/it][sf_bq136] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-parse error line 58 at position 25 near '<EOF>'.
-syntax error line 58 at position 25 unexpected '<EOF>'.
-[sf_bq052] No data found for the specified query.
-Evaluating SQL:  23%|##3       | 126/543 [01:01<08:56,  1.29s/it]Evaluating SQL:  23%|##3       | 127/543 [01:02<06:36,  1.05it/s]Evaluating SQL:  24%|##3       | 128/543 [01:02<04:52,  1.42it/s][sf_bq143] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 57 at position 34 unexpected ';'.
-Evaluating SQL:  24%|##3       | 129/543 [01:02<04:41,  1.47it/s][sf_bq141] No data found for the specified query.
-Evaluating SQL:  24%|##3       | 130/543 [01:03<04:40,  1.47it/s][sf_bq150] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'TCGA_HG19_DATA_V0.PUBLIC.RNASEQ_GENE_EXPRESSION_UNC_RSEM' does not exist or not authorized.
-Evaluating SQL:  24%|##4       | 132/543 [01:04<04:03,  1.69it/s]Evaluating SQL:  25%|##4       | 134/543 [01:04<02:34,  2.64it/s]Evaluating SQL:  25%|##4       | 135/543 [01:04<02:21,  2.89it/s]Evaluating SQL:  25%|##5       | 136/543 [01:05<02:42,  2.50it/s][sf_bq152] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 94 at position 22 unexpected ';'.
-Evaluating SQL:  25%|##5       | 137/543 [01:05<02:25,  2.79it/s][sf_bq002] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  25%|##5       | 138/543 [01:06<02:44,  2.46it/s]Evaluating SQL:  26%|##5       | 140/543 [01:06<01:46,  3.79it/s]Evaluating SQL:  26%|##5       | 141/543 [01:06<01:33,  4.28it/s][sf_bq159] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 60 at position 25 unexpected ';'.
-Evaluating SQL:  26%|##6       | 142/543 [01:06<02:00,  3.32it/s]Evaluating SQL:  26%|##6       | 143/543 [01:07<01:42,  3.91it/s][sf_bq022] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  27%|##6       | 144/543 [01:07<01:47,  3.70it/s][sf_bq078] No data found for the specified query.
-Evaluating SQL:  27%|##6       | 145/543 [01:07<01:31,  4.37it/s]Evaluating SQL:  27%|##6       | 146/543 [01:07<01:22,  4.81it/s]Evaluating SQL:  27%|##7       | 147/543 [01:08<02:08,  3.08it/s]Evaluating SQL:  27%|##7       | 149/543 [01:08<01:42,  3.85it/s]Evaluating SQL:  28%|##7       | 150/543 [01:08<01:38,  3.99it/s]Evaluating SQL:  28%|##7       | 151/543 [01:09<02:59,  2.18it/s]Evaluating SQL:  28%|##7       | 152/543 [01:10<02:58,  2.19it/s]Evaluating SQL:  28%|##8       | 153/543 [01:10<02:29,  2.61it/s][sf_bq175] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 29 at position 98 unexpected ';'.
-Evaluating SQL:  28%|##8       | 154/543 [01:11<02:56,  2.21it/s]Evaluating SQL:  29%|##8       | 155/543 [01:11<02:25,  2.66it/s]Evaluating SQL:  29%|##8       | 156/543 [01:11<02:13,  2.89it/s]Evaluating SQL:  29%|##9       | 160/543 [01:11<00:56,  6.81it/s][sf_bq185] Error occurred while fetching data: 001044 (42P13): SQL compilation error: error line 2 at position 6
-Invalid argument types for function 'DATE_DIFFTIMESTAMPINSECONDS': (NUMBER(38,0), NUMBER(38,0))
-[sf_bq182] No data found for the specified query.
-Evaluating SQL:  30%|##9       | 162/543 [01:12<01:15,  5.07it/s]Evaluating SQL:  30%|###       | 164/543 [01:12<01:01,  6.17it/s]Evaluating SQL:  31%|###       | 166/543 [01:12<01:00,  6.20it/s]Evaluating SQL:  31%|###       | 167/543 [01:13<01:52,  3.36it/s]Evaluating SQL:  31%|###1      | 169/543 [01:13<01:25,  4.35it/s][sf_bq192] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 22 at position 5 unexpected 'repo_name'.
-parse error line 30 at position 8 near '<EOF>'.
-[sf_bq193] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 31 at position 33 unexpected ';'.
-Evaluating SQL:  31%|###1      | 170/543 [01:16<04:13,  1.47it/s]Evaluating SQL:  32%|###1      | 172/543 [01:17<03:20,  1.85it/s]Evaluating SQL:  32%|###1      | 173/543 [01:18<04:53,  1.26it/s][sf_bq155] No data found for the specified query.
-[sf_bq195] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 15 at position 29 unexpected ';'.
-syntax error line 27 at position 0 unexpected ')'.
-Evaluating SQL:  32%|###2      | 175/543 [01:19<03:19,  1.84it/s]Evaluating SQL:  32%|###2      | 176/543 [01:19<02:52,  2.13it/s]Evaluating SQL:  33%|###2      | 177/543 [01:19<02:51,  2.13it/s]Evaluating SQL:  33%|###2      | 179/543 [01:19<01:53,  3.21it/s]Evaluating SQL:  33%|###3      | 180/543 [01:19<01:37,  3.74it/s]Evaluating SQL:  33%|###3      | 181/543 [01:20<01:41,  3.56it/s]Evaluating SQL:  34%|###3      | 182/543 [01:20<01:48,  3.32it/s]Evaluating SQL:  34%|###3      | 183/543 [01:20<01:34,  3.79it/s]Evaluating SQL:  34%|###3      | 184/543 [01:21<01:29,  4.03it/s]Evaluating SQL:  34%|###4      | 185/543 [01:21<01:41,  3.53it/s]Evaluating SQL:  34%|###4      | 186/543 [01:21<01:24,  4.21it/s]Evaluating SQL:  34%|###4      | 187/543 [01:21<01:21,  4.38it/s]Evaluating SQL:  35%|###4      | 188/543 [01:21<01:11,  4.96it/s]Evaluating SQL:  35%|###4      | 189/543 [01:22<01:39,  3.55it/s]Evaluating SQL:  35%|###4      | 190/543 [01:22<01:37,  3.62it/s]Evaluating SQL:  35%|###5      | 192/543 [01:23<01:38,  3.56it/s]Evaluating SQL:  36%|###5      | 193/543 [01:23<01:53,  3.09it/s][sf_bq221] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 9 at position 38 unexpected ';'.
-Evaluating SQL:  36%|###5      | 194/543 [01:23<01:45,  3.30it/s][sf_bq223] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 7 at position 27 unexpected ';'.
-Evaluating SQL:  36%|###5      | 195/543 [01:24<02:31,  2.30it/s]Evaluating SQL:  36%|###6      | 196/543 [01:25<02:24,  2.40it/s]Evaluating SQL:  36%|###6      | 197/543 [01:25<03:17,  1.76it/s]Evaluating SQL:  36%|###6      | 198/543 [01:26<03:15,  1.77it/s][sf_bq226] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 8 at position 31 unexpected ';'.
-Evaluating SQL:  37%|###6      | 199/543 [01:26<02:39,  2.15it/s]Evaluating SQL:  37%|###6      | 200/543 [01:27<03:25,  1.67it/s]Evaluating SQL:  37%|###7      | 202/543 [01:28<02:38,  2.16it/s]Evaluating SQL:  37%|###7      | 203/543 [01:28<02:18,  2.46it/s]Evaluating SQL:  38%|###7      | 205/543 [01:28<01:55,  2.93it/s]Evaluating SQL:  38%|###8      | 207/543 [01:29<01:28,  3.78it/s]Evaluating SQL:  38%|###8      | 209/543 [01:29<01:26,  3.86it/s][sf_bq247] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 7 at position 23 unexpected ';'.
-Evaluating SQL:  39%|###8      | 210/543 [01:30<01:25,  3.88it/s]Evaluating SQL:  39%|###9      | 213/543 [01:30<00:54,  6.04it/s][sf_bq250] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 9 at position 26 unexpected ';'.
-Evaluating SQL:  39%|###9      | 214/543 [01:30<01:18,  4.19it/s]Evaluating SQL:  40%|###9      | 216/543 [01:30<01:00,  5.43it/s]Evaluating SQL:  40%|####      | 218/543 [01:31<00:48,  6.69it/s][sf_bq096] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-[sf_bq253] Error occurred while fetching data: 002031 (42601): SQL compilation error:
-Unsupported subquery type cannot be evaluated
-[sf_bq254] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 4 at position 30 unexpected '&'.
-syntax error line 4 at position 33 unexpected ';'.
-syntax error line 8 at position 21 unexpected ')'.
-syntax error line 8 at position 23 unexpected 'OVER'.
-[sf_bq256] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 14 at position 30 unexpected ';'.
-Evaluating SQL:  40%|####      | 219/543 [01:31<01:08,  4.74it/s]Evaluating SQL:  41%|####      | 222/543 [01:31<00:42,  7.52it/s][sf_bq263] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 20 at position 13 unexpected ';'.
-[sf_bq261] No data found for the specified query.
-Evaluating SQL:  41%|####1     | 224/543 [01:32<01:10,  4.53it/s]Evaluating SQL:  42%|####1     | 226/543 [01:33<01:12,  4.38it/s]Evaluating SQL:  42%|####1     | 227/543 [01:33<01:17,  4.10it/s]Evaluating SQL:  42%|####1     | 228/543 [01:33<01:09,  4.54it/s]Evaluating SQL:  42%|####2     | 230/543 [01:34<01:18,  3.99it/s][sf_bq269] Error occurred while fetching data: 001065 (22023): SQL compilation error:
-Function TRY_CAST cannot be used with arguments of types VARIANT and NUMBER(38,0)
-Evaluating SQL:  43%|####2     | 231/543 [01:34<01:14,  4.16it/s]Evaluating SQL:  43%|####2     | 232/543 [01:34<01:07,  4.64it/s][sf_bq271] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'THELOOK_ECOMMERCE.PUBLIC.ORDERS' does not exist or not authorized.
-Evaluating SQL:  43%|####2     | 233/543 [01:34<01:24,  3.67it/s]Evaluating SQL:  43%|####3     | 234/543 [01:36<03:15,  1.58it/s][sf_bq207] No data found for the specified query.
-Evaluating SQL:  43%|####3     | 235/543 [01:40<07:58,  1.55s/it]Evaluating SQL:  43%|####3     | 236/543 [01:43<10:13,  2.00s/it]Evaluating SQL:  44%|####3     | 237/543 [01:43<07:29,  1.47s/it]Evaluating SQL:  44%|####3     | 238/543 [01:44<07:00,  1.38s/it]Evaluating SQL:  44%|####4     | 240/543 [01:45<04:10,  1.21it/s][sf_bq225] No data found for the specified query.
-Evaluating SQL:  44%|####4     | 241/543 [01:45<03:54,  1.29it/s]Evaluating SQL:  45%|####4     | 242/543 [01:46<03:13,  1.56it/s][sf_bq283] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 37 at position 27 unexpected '='.
-Evaluating SQL:  45%|####4     | 243/543 [01:46<03:05,  1.62it/s]Evaluating SQL:  45%|####5     | 245/543 [01:46<01:50,  2.69it/s]Evaluating SQL:  45%|####5     | 246/543 [01:47<01:50,  2.69it/s]Evaluating SQL:  45%|####5     | 247/543 [01:47<01:37,  3.04it/s][sf_bq284] Error occurred while fetching data: 100048 (2201B): Invalid regular expression: '(?i)\beducation\b', no argument for repetition operator: ?
-Evaluating SQL:  46%|####5     | 248/543 [01:47<01:34,  3.13it/s]Evaluating SQL:  46%|####6     | 252/543 [01:48<00:58,  4.97it/s][sf_bq291] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 39 at position 30 unexpected ';'.
-syntax error line 39 at position 68 unexpected ')'.
-Evaluating SQL:  47%|####6     | 253/543 [01:48<01:03,  4.59it/s]Evaluating SQL:  47%|####7     | 256/543 [01:49<00:58,  4.87it/s]Evaluating SQL:  47%|####7     | 257/543 [01:50<02:13,  2.14it/s][sf_bq304] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 57 at position 15 unexpected '='.
-Evaluating SQL:  48%|####7     | 258/543 [01:51<02:27,  1.94it/s]Evaluating SQL:  48%|####7     | 259/543 [01:51<02:03,  2.30it/s]Evaluating SQL:  48%|####7     | 260/543 [01:51<01:46,  2.66it/s]Evaluating SQL:  48%|####8     | 261/543 [01:52<01:59,  2.35it/s]Evaluating SQL:  48%|####8     | 262/543 [01:52<02:06,  2.21it/s][sf_bq308] No data found for the specified query.
-Evaluating SQL:  48%|####8     | 263/543 [01:53<02:08,  2.18it/s][sf_bq310] No data found for the specified query.
-Evaluating SQL:  49%|####8     | 264/543 [01:56<05:34,  1.20s/it]Evaluating SQL:  49%|####8     | 265/543 [01:56<04:28,  1.03it/s]Evaluating SQL:  49%|####8     | 266/543 [01:57<03:30,  1.32it/s]Evaluating SQL:  49%|####9     | 268/543 [01:57<02:05,  2.19it/s]Evaluating SQL:  50%|####9     | 269/543 [01:57<01:55,  2.38it/s]Evaluating SQL:  50%|####9     | 270/543 [01:57<01:42,  2.66it/s][sf_bq325] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 27 at position 52 unexpected '='.
-Evaluating SQL:  50%|####9     | 271/543 [01:58<01:29,  3.04it/s]Evaluating SQL:  50%|#####     | 273/543 [01:58<01:31,  2.95it/s]Evaluating SQL:  50%|#####     | 274/543 [01:58<01:18,  3.42it/s]Evaluating SQL:  51%|#####     | 275/543 [01:59<01:07,  3.96it/s]Evaluating SQL:  51%|#####     | 276/543 [01:59<01:24,  3.14it/s]Evaluating SQL:  51%|#####1    | 277/543 [01:59<01:15,  3.53it/s][sf_bq335] No data found for the specified query.
-[sf_bq338] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'CENSUS_BUREAU_ACS_1.GEO_CENSUS_TRACTS.CENSUS_TRACTS' does not exist or not authorized.
-Evaluating SQL:  51%|#####1    | 278/543 [02:00<01:43,  2.56it/s]Evaluating SQL:  51%|#####1    | 279/543 [02:00<01:27,  3.02it/s]Evaluating SQL:  52%|#####1    | 280/543 [02:01<02:27,  1.79it/s]Evaluating SQL:  52%|#####1    | 281/543 [02:02<02:53,  1.51it/s]Evaluating SQL:  52%|#####1    | 282/543 [02:03<03:46,  1.15it/s]Evaluating SQL:  52%|#####2    | 285/543 [02:04<01:50,  2.34it/s]Evaluating SQL:  53%|#####2    | 287/543 [02:04<01:27,  2.93it/s]Evaluating SQL:  53%|#####3    | 288/543 [02:04<01:19,  3.19it/s][sf_bq349] No data found for the specified query.
-Evaluating SQL:  53%|#####3    | 290/543 [02:05<01:20,  3.16it/s][sf_bq350] No data found for the specified query.
-Evaluating SQL:  54%|#####3    | 291/543 [02:05<01:21,  3.08it/s]Evaluating SQL:  54%|#####3    | 292/543 [02:05<01:11,  3.52it/s][sf_bq289] No data found for the specified query.
-Evaluating SQL:  54%|#####3    | 293/543 [02:06<01:31,  2.72it/s]Evaluating SQL:  54%|#####4    | 294/543 [02:07<01:41,  2.45it/s]Evaluating SQL:  54%|#####4    | 295/543 [02:07<01:26,  2.86it/s]Evaluating SQL:  55%|#####4    | 296/543 [02:07<01:30,  2.73it/s]Evaluating SQL:  55%|#####4    | 297/543 [02:07<01:14,  3.30it/s][sf_bq356] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 6 at position 39 unexpected ';'.
-Evaluating SQL:  55%|#####5    | 299/543 [02:08<01:21,  3.00it/s]Evaluating SQL:  55%|#####5    | 300/543 [02:08<01:08,  3.54it/s][sf_bq358] Error occurred while fetching data: 001007 (22023): SQL compilation error:
-invalid type [CAST(ST_POINT(SYS_VW."start_lon_3", SYS_VW."start_lat_2") AS GEOGRAPHY)] for parameter 'TO_GEOGRAPHY'
-Evaluating SQL:  55%|#####5    | 301/543 [02:09<01:31,  2.65it/s]Evaluating SQL:  56%|#####5    | 302/543 [02:10<01:53,  2.13it/s]Evaluating SQL:  56%|#####5    | 303/543 [02:10<01:45,  2.26it/s]Evaluating SQL:  56%|#####5    | 304/543 [02:10<01:28,  2.69it/s]Evaluating SQL:  56%|#####6    | 305/543 [02:11<02:04,  1.91it/s][sf_bq373] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 6 at position 66 unexpected '&'.
-syntax error line 6 at position 69 unexpected ';'.
-syntax error line 6 at position 75 unexpected ')'.
-syntax error line 7 at position 2 unexpected ')'.
-Evaluating SQL:  56%|#####6    | 306/543 [02:12<02:08,  1.85it/s][sf_bq374] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 9 at position 49 unexpected '*'.
-Evaluating SQL:  57%|#####6    | 308/543 [02:12<01:18,  2.98it/s]Evaluating SQL:  57%|#####7    | 310/543 [02:13<01:33,  2.49it/s][sf_bq376] No data found for the specified query.
-Evaluating SQL:  57%|#####7    | 311/543 [02:13<01:24,  2.74it/s]Evaluating SQL:  58%|#####7    | 313/543 [02:13<00:57,  3.99it/s][sf_bq188] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  58%|#####7    | 314/543 [02:14<01:07,  3.41it/s][sf_bq391] No data found for the specified query.
-Evaluating SQL:  58%|#####8    | 315/543 [02:15<01:59,  1.91it/s]Evaluating SQL:  58%|#####8    | 317/543 [02:15<01:17,  2.93it/s][sf_bq395] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 43 at position 15 unexpected '='.
-Evaluating SQL:  59%|#####8    | 318/543 [02:16<01:35,  2.36it/s]Evaluating SQL:  59%|#####8    | 320/543 [02:17<01:32,  2.41it/s]Evaluating SQL:  59%|#####9    | 322/543 [02:17<01:29,  2.46it/s]Evaluating SQL:  59%|#####9    | 323/543 [02:18<01:50,  2.00it/s]Evaluating SQL:  60%|#####9    | 324/543 [02:18<01:30,  2.41it/s]Evaluating SQL:  60%|#####9    | 325/543 [02:19<01:45,  2.06it/s]Evaluating SQL:  60%|######    | 326/543 [02:19<01:42,  2.12it/s]Evaluating SQL:  60%|######    | 328/543 [02:20<01:35,  2.24it/s]Evaluating SQL:  61%|######    | 329/543 [02:20<01:21,  2.62it/s]Evaluating SQL:  61%|######    | 331/543 [02:21<00:52,  4.01it/s][sf_bq411] No data found for the specified query.
-[sf_bq413] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 12 at position 61 unexpected '='.
-Evaluating SQL:  61%|######1   | 332/543 [02:21<01:05,  3.23it/s][sf_bq414] Error occurred while fetching data: 001065 (22023): SQL compilation error:
-Function TRY_CAST cannot be used with arguments of types VARIANT and FLOAT
-Evaluating SQL:  61%|######1   | 333/543 [02:21<01:00,  3.45it/s][sf_bq214] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  62%|######1   | 335/543 [02:22<01:09,  3.00it/s]Evaluating SQL:  62%|######2   | 337/543 [02:22<00:49,  4.14it/s]Evaluating SQL:  62%|######2   | 338/543 [02:23<01:09,  2.94it/s]Evaluating SQL:  62%|######2   | 339/543 [02:24<01:55,  1.77it/s][sf_bq348] No data found for the specified query.
-Evaluating SQL:  63%|######2   | 340/543 [02:25<01:39,  2.04it/s][sf_bq423] No data found for the specified query.
-Evaluating SQL:  63%|######2   | 341/543 [02:25<01:53,  1.78it/s]Evaluating SQL:  63%|######2   | 342/543 [02:26<01:52,  1.79it/s][sf_bq425] No data found for the specified query.
-Evaluating SQL:  63%|######3   | 343/543 [02:27<02:50,  1.17it/s][sf_bq426] No data found for the specified query.
-Evaluating SQL:  63%|######3   | 344/543 [02:29<03:05,  1.07it/s]Evaluating SQL:  64%|######3   | 346/543 [02:29<01:50,  1.79it/s][sf_bq359] No data found for the specified query.
-[sf_bq427] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 10 at position 28 unexpected ';'.
-Evaluating SQL:  64%|######3   | 347/543 [02:29<01:38,  1.99it/s][sf_bq429] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 31 at position 82 unexpected ';'.
-Evaluating SQL:  64%|######4   | 348/543 [02:29<01:21,  2.39it/s]Evaluating SQL:  64%|######4   | 350/543 [02:31<01:44,  1.85it/s]Evaluating SQL:  65%|######4   | 351/543 [02:33<03:21,  1.05s/it][sf_bq445] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 6 at position 32
-invalid identifier 'V."vep"'
-Evaluating SQL:  65%|######4   | 352/543 [02:36<04:41,  1.47s/it]Evaluating SQL:  65%|######5   | 353/543 [02:38<04:32,  1.43s/it][sf_bq451] Error occurred while fetching data: 002031 (42601): SQL compilation error:
-Unsupported subquery type cannot be evaluated
-Evaluating SQL:  65%|######5   | 354/543 [02:39<04:55,  1.56s/it]Evaluating SQL:  65%|######5   | 355/543 [02:43<06:49,  2.18s/it][sf_bq453] Error occurred while fetching data: 001065 (22023): SQL compilation error:
-Function TRY_CAST cannot be used with arguments of types VARIANT and NUMBER(38,0)
-Evaluating SQL:  66%|######5   | 356/543 [02:44<05:20,  1.71s/it]Evaluating SQL:  66%|######5   | 357/543 [02:44<03:53,  1.26s/it][sf_bq456] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 4 at position 14
-invalid identifier '"CodeMeaning"'
-Evaluating SQL:  66%|######6   | 359/543 [02:45<02:41,  1.14it/s]Evaluating SQL:  66%|######6   | 361/543 [02:45<01:58,  1.53it/s]Evaluating SQL:  67%|######6   | 362/543 [02:46<02:05,  1.44it/s][sf_bq460] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 112 at position 18 unexpected ';'.
-Evaluating SQL:  67%|######6   | 363/543 [02:47<01:59,  1.50it/s]Evaluating SQL:  67%|######7   | 364/543 [02:47<01:36,  1.85it/s][sf_bq461] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 20 at position 39 unexpected ';'.
-Evaluating SQL:  67%|######7   | 365/543 [02:47<01:36,  1.84it/s]sf_bq389: multi-compare against ['gold/exec_result/sf_bq389_a.csv', 'gold/exec_result/sf_bq389_b.csv', 'gold/exec_result/sf_bq389_c.csv', 'gold/exec_result/sf_bq389_d.csv', 'gold/exec_result/sf_bq389_e.csv', 'gold/exec_result/sf_bq389_f.csv', 'gold/exec_result/sf_bq389_g.csv'] failed: positional indexers are out-of-bounds
-Evaluating SQL:  67%|######7   | 366/543 [02:48<01:29,  1.99it/s]Evaluating SQL:  68%|######7   | 367/543 [02:48<01:25,  2.07it/s]Evaluating SQL:  68%|######7   | 368/543 [02:49<01:16,  2.29it/s][sf_bq302] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  68%|######8   | 370/543 [02:49<01:11,  2.43it/s]Evaluating SQL:  69%|######8   | 372/543 [02:50<00:47,  3.62it/s][sf_ga006] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 37 at position 27 unexpected '&'.
-syntax error line 37 at position 30 unexpected ';'.
-syntax error line 63 at position 31 unexpected '1'.
-[sf_ga008] Error occurred while fetching data: 002028 (42601): SQL compilation error:
-ambiguous column name 'USER_PSEUDO_ID'
-Evaluating SQL:  69%|######8   | 373/543 [02:50<00:58,  2.92it/s]Evaluating SQL:  69%|######8   | 374/543 [02:50<00:49,  3.40it/s]Evaluating SQL:  69%|######9   | 375/543 [02:51<00:58,  2.89it/s]Evaluating SQL:  69%|######9   | 376/543 [02:52<01:19,  2.10it/s]Evaluating SQL:  69%|######9   | 377/543 [02:52<01:08,  2.44it/s][sf_bq416] Error occurred while fetching data: 100137 (22007): Bad input format model 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' for FIXED: too many digits in numeric format: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-Evaluating SQL:  70%|######9   | 379/543 [02:52<00:48,  3.35it/s][sf_ga012] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 34 at position 59 unexpected ';'.
-Evaluating SQL:  70%|######9   | 380/543 [02:52<00:46,  3.49it/s][sf_ga013] Error occurred while fetching data: 100048 (2201B): Invalid regular expression: '(?i)Accessories|Apparel|Brands|Campus Collection|Drinkware|Electronics|Google Redesign|Lifestyle|Nest|New 2015 Logo|Notebooks Journals|Office|Shop by Brand|Small Goods|Stationery|Wearables', no argument for repetition operator: ?
-Evaluating SQL:  70%|#######   | 381/543 [02:53<00:49,  3.24it/s][sf_ga018] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 6 at position 17
-invalid identifier 'EP."value"'
-Evaluating SQL:  70%|#######   | 382/543 [02:53<00:46,  3.47it/s]Evaluating SQL:  71%|#######   | 383/543 [02:53<00:39,  4.04it/s]Evaluating SQL:  71%|#######   | 384/543 [02:53<00:34,  4.55it/s]Evaluating SQL:  71%|#######   | 385/543 [02:55<01:27,  1.81it/s]Evaluating SQL:  71%|#######1  | 386/543 [02:55<01:14,  2.10it/s]Evaluating SQL:  71%|#######1  | 387/543 [02:56<01:39,  1.56it/s]Evaluating SQL:  71%|#######1  | 388/543 [02:57<02:09,  1.20it/s]Evaluating SQL:  72%|#######1  | 389/543 [02:58<02:00,  1.27it/s]Evaluating SQL:  72%|#######1  | 390/543 [02:59<02:06,  1.21it/s]Evaluating SQL:  72%|#######2  | 391/543 [03:00<01:58,  1.29it/s]Evaluating SQL:  72%|#######2  | 392/543 [03:00<01:46,  1.42it/s]Evaluating SQL:  72%|#######2  | 393/543 [03:01<02:13,  1.12it/s][sf_local004] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 26 at position 65 unexpected ';'.
-syntax error line 27 at position 6 unexpected '1.0'.
-syntax error line 28 at position 15 unexpected ''day''.
-syntax error line 28 at position 25 unexpected '('.
-syntax error line 28 at position 60 unexpected ')'.
-Evaluating SQL:  73%|#######2  | 394/543 [03:02<01:48,  1.37it/s]Evaluating SQL:  73%|#######2  | 395/543 [03:02<01:36,  1.53it/s]Evaluating SQL:  73%|#######2  | 396/543 [03:03<01:24,  1.73it/s]Evaluating SQL:  73%|#######3  | 397/543 [03:03<01:19,  1.83it/s]Evaluating SQL:  73%|#######3  | 398/543 [03:03<01:07,  2.16it/s][sf_local017] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 24 at position 16 unexpected ';'.
-Evaluating SQL:  73%|#######3  | 399/543 [03:04<01:13,  1.95it/s]Evaluating SQL:  74%|#######3  | 400/543 [03:04<00:57,  2.47it/s]Evaluating SQL:  74%|#######3  | 401/543 [03:06<02:14,  1.06it/s][sf_bq450] No data found for the specified query.
-Evaluating SQL:  74%|#######4  | 402/543 [03:07<02:07,  1.11it/s]Evaluating SQL:  74%|#######4  | 403/543 [03:07<01:41,  1.37it/s][sf_local021] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 19 at position 24 unexpected ';'.
-Evaluating SQL:  74%|#######4  | 404/543 [03:08<01:26,  1.61it/s]Evaluating SQL:  75%|#######4  | 405/543 [03:09<01:30,  1.53it/s]Evaluating SQL:  75%|#######4  | 406/543 [03:12<03:16,  1.44s/it]Evaluating SQL:  75%|#######4  | 407/543 [03:14<03:42,  1.64s/it]Evaluating SQL:  75%|#######5  | 408/543 [03:16<03:51,  1.72s/it][sf_bq393] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  75%|#######5  | 409/543 [03:16<02:59,  1.34s/it]Evaluating SQL:  76%|#######5  | 410/543 [03:18<03:09,  1.42s/it]Evaluating SQL:  76%|#######5  | 411/543 [03:19<02:36,  1.18s/it]Evaluating SQL:  76%|#######5  | 412/543 [03:20<02:43,  1.25s/it]Evaluating SQL:  76%|#######6  | 413/543 [03:21<02:22,  1.10s/it]Evaluating SQL:  76%|#######6  | 414/543 [03:24<04:02,  1.88s/it]Evaluating SQL:  76%|#######6  | 415/543 [03:25<02:58,  1.39s/it]Evaluating SQL:  77%|#######6  | 416/543 [03:28<04:23,  2.08s/it][sf_local035] Error occurred while fetching data: 100044 (22P01): Invalid floating point operation: acos(1)
-Evaluating SQL:  77%|#######6  | 417/543 [03:29<03:39,  1.74s/it]Evaluating SQL:  77%|#######6  | 418/543 [03:29<02:38,  1.27s/it]Evaluating SQL:  77%|#######7  | 419/543 [03:30<02:25,  1.18s/it]Evaluating SQL:  77%|#######7  | 420/543 [03:31<02:21,  1.15s/it]Evaluating SQL:  78%|#######7  | 421/543 [03:32<01:45,  1.15it/s]Evaluating SQL:  78%|#######7  | 422/543 [03:33<01:47,  1.12it/s]Evaluating SQL:  78%|#######7  | 423/543 [03:34<01:52,  1.06it/s][sf_local054] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 40 at position 25 unexpected '1'.
-Evaluating SQL:  78%|#######8  | 424/543 [03:34<01:36,  1.23it/s]Evaluating SQL:  78%|#######8  | 425/543 [03:34<01:10,  1.67it/s][sf_local056] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'SQLITE_SAKILA.PUBLIC.PAYMENT' does not exist or not authorized.
-Evaluating SQL:  78%|#######8  | 426/543 [03:36<01:45,  1.10it/s]Evaluating SQL:  79%|#######8  | 427/543 [03:38<02:21,  1.22s/it][sf_local060] Error occurred while fetching data: 002003 (42S02): SQL compilation error:
-Object 'COMPLEX_ORACLE.PUBLIC.SALES' does not exist or not authorized.
-Evaluating SQL:  79%|#######8  | 428/543 [03:39<02:31,  1.32s/it]Evaluating SQL:  79%|#######9  | 429/543 [03:41<02:54,  1.53s/it]Evaluating SQL:  79%|#######9  | 430/543 [03:43<03:06,  1.65s/it][sf_bq459] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-[sf_bq458] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  79%|#######9  | 431/543 [03:46<03:50,  2.06s/it]Evaluating SQL:  80%|#######9  | 432/543 [03:47<02:45,  1.49s/it]Evaluating SQL:  80%|#######9  | 433/543 [03:49<03:08,  1.71s/it][sf_ga002] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  80%|#######9  | 434/543 [03:49<02:31,  1.39s/it]Evaluating SQL:  80%|########  | 435/543 [03:50<02:06,  1.17s/it][sf_ga005] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  80%|########  | 436/543 [03:51<01:49,  1.02s/it]Evaluating SQL:  80%|########  | 437/543 [03:51<01:32,  1.15it/s]Evaluating SQL:  81%|########  | 438/543 [03:52<01:11,  1.47it/s]Evaluating SQL:  81%|########  | 439/543 [03:53<01:41,  1.03it/s]Evaluating SQL:  81%|########1 | 440/543 [03:54<01:20,  1.28it/s]Evaluating SQL:  81%|########1 | 441/543 [03:54<00:59,  1.70it/s]Evaluating SQL:  81%|########1 | 442/543 [03:54<00:50,  2.00it/s][sf_ga021] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  82%|########1 | 444/543 [03:54<00:36,  2.74it/s]Evaluating SQL:  82%|########1 | 445/543 [03:55<00:30,  3.26it/s]Evaluating SQL:  82%|########2 | 446/543 [03:55<00:32,  2.96it/s][sf_ga022] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  82%|########2 | 447/543 [03:56<00:46,  2.08it/s]Evaluating SQL:  83%|########2 | 449/543 [03:56<00:33,  2.81it/s]Evaluating SQL:  83%|########2 | 450/543 [03:58<00:57,  1.62it/s]Evaluating SQL:  83%|########3 | 452/543 [03:58<00:38,  2.36it/s]Evaluating SQL:  84%|########3 | 454/543 [03:58<00:30,  2.89it/s]Evaluating SQL:  84%|########3 | 455/543 [03:59<00:30,  2.92it/s]Evaluating SQL:  84%|########4 | 457/543 [03:59<00:21,  4.08it/s]Evaluating SQL:  85%|########4 | 459/543 [03:59<00:14,  5.60it/s][sf_local130] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 26 at position 5 unexpected 'SELECT'.
-syntax error line 26 at position 17 unexpected '('.
-syntax error line 26 at position 18 unexpected '*'.
-syntax error line 27 at position 5 unexpected 'FROM'.
-Evaluating SQL:  85%|########4 | 461/543 [04:00<00:20,  3.95it/s]Evaluating SQL:  85%|########5 | 462/543 [04:00<00:18,  4.30it/s][sf_ga020] Error occurred while fetching data: 000630 (57014): Statement reached its statement or warehouse timeout of 60 second(s) and was canceled.
-Evaluating SQL:  85%|########5 | 463/543 [04:01<00:26,  2.98it/s]Evaluating SQL:  85%|########5 | 464/543 [04:01<00:29,  2.65it/s]Evaluating SQL:  86%|########5 | 465/543 [04:01<00:25,  3.08it/s]Evaluating SQL:  86%|########5 | 466/543 [04:02<00:23,  3.26it/s]Evaluating SQL:  86%|########6 | 469/543 [04:02<00:12,  5.83it/s]Evaluating SQL:  87%|########6 | 470/543 [04:02<00:17,  4.08it/s][sf_local169] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 11 at position 33 unexpected '&'.
-syntax error line 11 at position 36 unexpected ';'.
-syntax error line 11 at position 41 unexpected ')'.
-Evaluating SQL:  87%|########6 | 471/543 [04:02<00:15,  4.54it/s]Evaluating SQL:  87%|########6 | 472/543 [04:03<00:16,  4.27it/s]Evaluating SQL:  87%|########7 | 473/543 [04:03<00:17,  4.00it/s]Evaluating SQL:  87%|########7 | 474/543 [04:03<00:18,  3.81it/s][sf_local157] Error occurred while fetching data: 100040 (22007): Date '29-08-2021' is not recognized
-Evaluating SQL:  87%|########7 | 475/543 [04:04<00:24,  2.77it/s][sf_local156] Error occurred while fetching data: 100040 (22007): Date '29-08-2021' is not recognized
-[sf_local167] No data found for the specified query.
-[sf_local198] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 5 at position 21 unexpected ';'.
-Evaluating SQL:  88%|########7 | 477/543 [04:04<00:19,  3.47it/s]Evaluating SQL:  88%|########8 | 478/543 [04:04<00:17,  3.78it/s]Evaluating SQL:  88%|########8 | 480/543 [04:05<00:12,  4.91it/s]Evaluating SQL:  89%|########8 | 481/543 [04:05<00:15,  4.02it/s]Evaluating SQL:  89%|########8 | 482/543 [04:07<00:33,  1.79it/s]Evaluating SQL:  89%|########9 | 484/543 [04:07<00:26,  2.23it/s]Evaluating SQL:  90%|########9 | 487/543 [04:08<00:20,  2.80it/s]Evaluating SQL:  90%|######### | 491/543 [04:09<00:13,  3.81it/s]Evaluating SQL:  91%|######### | 493/543 [04:09<00:10,  4.69it/s]Evaluating SQL:  91%|#########1| 495/543 [04:09<00:08,  5.73it/s][sf_local262] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 26 at position 19 unexpected ';'.
-Evaluating SQL:  92%|#########1| 497/543 [04:10<00:10,  4.24it/s]Evaluating SQL:  92%|#########1| 498/543 [04:10<00:11,  4.05it/s]Evaluating SQL:  92%|#########2| 500/543 [04:10<00:08,  5.01it/s][sf_local270] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 20 at position 21 unexpected 'PRIOR'.
-[sf_local272] Error occurred while fetching data: 000904 (42000): SQL compilation error: error line 3 at position 4
-invalid identifier '"id"'
-[sf_local274] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 40 at position 38 unexpected ';'.
-Evaluating SQL:  92%|#########2| 501/543 [04:11<00:10,  3.94it/s]Evaluating SQL:  92%|#########2| 502/543 [04:11<00:09,  4.49it/s][sf_local273] No data found for the specified query.
-Evaluating SQL:  93%|#########3| 505/543 [04:11<00:07,  5.37it/s]Evaluating SQL:  93%|#########3| 507/543 [04:11<00:05,  6.93it/s][sf_local275] No data found for the specified query.
-Evaluating SQL:  94%|#########3| 509/543 [04:12<00:06,  5.27it/s]Evaluating SQL:  94%|#########4| 511/543 [04:12<00:05,  6.40it/s]Evaluating SQL:  94%|#########4| 513/543 [04:12<00:03,  7.71it/s]Evaluating SQL:  95%|#########4| 515/543 [04:12<00:03,  8.46it/s]Evaluating SQL:  95%|#########5| 517/543 [04:13<00:06,  4.26it/s]Evaluating SQL:  96%|#########5| 519/543 [04:14<00:05,  4.55it/s]Evaluating SQL:  96%|#########5| 520/543 [04:14<00:04,  4.81it/s]Evaluating SQL:  96%|#########5| 521/543 [04:15<00:07,  2.93it/s][sf_local299] No data found for the specified query.
-Evaluating SQL:  96%|#########6| 522/543 [04:15<00:08,  2.44it/s]Evaluating SQL:  96%|#########6| 523/543 [04:16<00:08,  2.47it/s][sf_local311] Error occurred while fetching data: 001003 (42000): SQL compilation error:
-syntax error line 58 at position 95 unexpected '='.
-Evaluating SQL:  97%|#########6| 524/543 [04:16<00:08,  2.27it/s]Evaluating SQL:  97%|#########6| 525/543 [04:16<00:06,  2.74it/s]Evaluating SQL:  97%|#########6| 526/543 [04:17<00:05,  2.89it/s]Evaluating SQL:  97%|#########7| 527/543 [04:17<00:06,  2.29it/s]Evaluating SQL:  97%|#########7| 529/543 [04:18<00:04,  3.38it/s]Evaluating SQL:  98%|#########7| 531/543 [04:18<00:02,  4.01it/s]Evaluating SQL:  98%|#########7| 532/543 [04:18<00:02,  4.27it/s]Evaluating SQL:  98%|#########8| 534/543 [04:18<00:01,  6.09it/s]Evaluating SQL:  99%|#########8| 536/543 [04:19<00:01,  6.41it/s]Evaluating SQL:  99%|#########9| 538/543 [04:19<00:00,  5.91it/s]Evaluating SQL:  99%|#########9| 540/543 [04:19<00:00,  5.62it/s]Evaluating SQL: 100%|#########9| 542/543 [04:20<00:00,  6.59it/s]Evaluating SQL: 100%|##########| 543/543 [07:14<00:00, 32.27s/it]Evaluating SQL: 100%|##########| 543/543 [07:14<00:00,  1.25it/s]
-{'sf010': 0, 'sf040': 0, 'sf013': 0, 'sf029': 0, 'sf_bq003': 0, 'sf018': 0, 'sf002': 0, 'sf003': 0, 'sf035': 0, 'sf006': 0, 'sf012': 0, 'sf041': 0, 'sf014': 0, 'sf_bq007': 0, 'sf001': 0, 'sf_bq005': 1, 'sf_bq014': 1, 'sf_bq012': 1, 'sf_bq016': 0, 'sf_bq006': 1, 'sf044': 0, 'sf_bq019': 1, 'sf_bq020': 0, 'sf011': 1, 'sf008': 0, 'sf_bq018': 1, 'sf_bq024': 0, 'sf_bq023': 0, 'sf_bq025': 1, 'sf_bq026': 1, 'sf_bq029': 1, 'sf_bq015': 1, 'sf_bq034': 0, 'sf_bq035': 1, 'sf_bq030': 1, 'sf_bq031': 0, 'sf_bq009': 0, 'sf_bq004': 1, 'sf_bq041': 0, 'sf_bq011': 1, 'sf_bq027': 0, 'sf_bq001': 1, 'sf_bq032': 1, 'sf_bq045': 1, 'sf_bq046': 0, 'sf_bq033': 0, 'sf_bq047': 1, 'sf_bq049': 0, 'sf_bq021': 1, 'sf_bq053': 0, 'sf_bq051': 0, 'sf_bq028': 0, 'sf_bq054': 0, 'sf_bq056': 0, 'sf_bq057': 0, 'sf_bq055': 0, 'sf_bq058': 0, 'sf_bq060': 1, 'sf_bq062': 1, 'sf_bq036': 0, 'sf_bq059': 1, 'sf_bq063': 0, 'sf_bq065': 0, 'sf_bq038': 0, 'sf_bq037': 1, 'sf_bq066': 0, 'sf_bq008': 0, 'sf_bq010': 0, 'sf_bq043': 0, 'sf_bq068': 0, 'sf_bq069': 0, 'sf_bq073': 0, 'sf_bq071': 0, 'sf_bq074': 1, 'sf_bq070': 0, 'sf_bq075': 0, 'sf_bq077': 1, 'sf_bq076': 0, 'sf_bq039': 0, 'sf_bq079': 0, 'sf_bq017': 1, 'sf_bq080': 0, 'sf_bq081': 0, 'sf_bq083': 0, 'sf_bq084': 0, 'sf_bq044': 0, 'sf_bq042': 1, 'sf_bq086': 0, 'sf_bq040': 1, 'sf_bq085': 1, 'sf_bq089': 0, 'sf_bq091': 0, 'sf_bq088': 1, 'sf_bq087': 1, 'sf_bq093': 0, 'sf_bq097': 1, 'sf_bq098': 0, 'sf_bq099': 1, 'sf_bq100': 1, 'sf_bq101': 0, 'sf_bq102': 0, 'sf_bq103': 0, 'sf_bq104': 1, 'sf_bq105': 0, 'sf_bq107': 0, 'sf_bq108': 1, 'sf_bq110': 1, 'sf_bq109': 1, 'sf_bq111': 0, 'sf_bq114': 0, 'sf_bq115': 1, 'sf_bq112': 0, 'sf037': 0, 'sf_bq117': 0, 'sf_bq120': 0, 'sf_bq121': 0, 'sf_bq123': 0, 'sf_bq124': 1, 'sf_bq126': 1, 'sf_bq127': 1, 'sf_bq128': 1, 'sf_bq130': 0, 'sf_bq048': 0, 'sf_bq135': 1, 'sf_bq061': 1, 'sf_bq136': 0, 'sf_bq052': 0, 'sf_bq137': 0, 'sf_bq143': 0, 'sf_bq141': 0, 'sf_bq147': 1, 'sf_bq150': 0, 'sf_bq067': 1, 'sf_bq148': 1, 'sf_bq144': 1, 'sf_bq064': 0, 'sf_bq152': 0, 'sf_bq002': 0, 'sf_bq151': 0, 'sf_bq153': 1, 'sf_bq156': 1, 'sf_bq157': 1, 'sf_bq159': 0, 'sf_bq022': 0, 'sf_bq072': 0, 'sf_bq078': 0, 'sf_bq164': 1, 'sf_bq090': 0, 'sf_bq092': 0, 'sf_bq163': 0, 'sf_bq170': 1, 'sf_bq050': 0, 'sf_bq094': 0, 'sf_bq172': 1, 'sf_bq175': 0, 'sf_bq113': 1, 'sf_bq119': 1, 'sf_bq095': 1, 'sf_bq116': 1, 'sf_bq118': 0, 'sf_bq176': 1, 'sf_bq177': 1, 'sf_bq181': 0, 'sf_bq185': 0, 'sf_bq182': 0, 'sf_bq184': 0, 'sf_bq190': 1, 'sf_bq189': 0, 'sf_bq191': 1, 'sf_bq192': 0, 'sf_bq193': 0, 'sf_bq194': 1, 'sf_bq154': 1, 'sf_bq158': 0, 'sf_bq155': 0, 'sf_bq195': 0, 'sf_bq199': 0, 'sf_bq161': 1, 'sf_bq202': 1, 'sf_bq198': 1, 'sf_bq203': 0, 'sf_bq208': 0, 'sf_bq209': 1, 'sf_bq210': 0, 'sf_bq211': 1, 'sf_bq204': 0, 'sf_bq213': 1, 'sf_bq160': 1, 'sf_bq215': 0, 'sf_bq217': 0, 'sf_bq216': 1, 'sf_bq218': 1, 'sf_bq162': 0, 'sf_bq221': 0, 'sf_bq223': 0, 'sf_bq169': 1, 'sf_bq165': 0, 'sf_bq131': 0, 'sf_bq226': 0, 'sf_bq166': 0, 'sf_bq228': 1, 'sf_bq171': 0, 'sf_bq230': 0, 'sf_bq229': 0, 'sf_bq187': 1, 'sf_bq232': 1, 'sf_bq234': 0, 'sf_bq233': 1, 'sf_bq235': 1, 'sf_bq246': 0, 'sf_bq247': 0, 'sf_bq167': 1, 'sf_bq236': 0, 'sf_bq249': 0, 'sf_bq250': 0, 'sf_bq248': 0, 'sf_bq252': 1, 'sf_bq197': 0, 'sf_bq096': 0, 'sf_bq253': 0, 'sf_bq254': 0, 'sf_bq255': 0, 'sf_bq256': 0, 'sf_bq263': 0, 'sf_bq261': 0, 'sf_bq200': 0, 'sf_bq264': 1, 'sf_bq265': 0, 'sf_bq260': 1, 'sf_bq212': 1, 'sf_bq186': 0, 'sf_bq269': 0, 'sf_bq271': 0, 'sf_bq270': 0, 'sf_bq207': 0, 'sf_bq180': 0, 'sf_bq277': 0, 'sf_bq222': 0, 'sf_bq220': 1, 'sf_bq219': 1, 'sf_bq225': 0, 'sf_bq224': 1, 'sf_bq283': 0, 'sf_bq258': 0, 'sf_bq279': 1, 'sf_bq282': 1, 'sf_bq227': 1, 'sf_bq286': 1, 'sf_bq285': 1, 'sf_bq281': 0, 'sf_bq284': 0, 'sf_bq259': 1, 'sf_bq291': 0, 'sf_bq294': 0, 'sf_bq262': 0, 'sf_bq295': 1, 'sf_bq251': 1, 'sf_bq266': 1, 'sf_bq304': 0, 'sf_bq272': 1, 'sf_bq305': 1, 'sf_bq306': 0, 'sf_bq308': 0, 'sf_bq310': 0, 'sf_bq268': 0, 'sf_bq273': 1, 'sf_bq275': 0, 'sf_bq320': 1, 'sf_bq321': 1, 'sf_bq323': 1, 'sf_bq325': 0, 'sf_bq324': 0, 'sf_bq327': 0, 'sf_bq328': 1, 'sf_bq330': 1, 'sf_bq331': 1, 'sf_bq333': 0, 'sf_bq335': 0, 'sf_bq338': 0, 'sf_bq339': 0, 'sf_bq341': 1, 'sf_bq334': 0, 'sf_bq342': 1, 'sf_bq276': 0, 'sf_bq278': 0, 'sf_bq288': 1, 'sf_bq290': 1, 'sf_bq292': 0, 'sf_bq346': 0, 'sf_bq349': 0, 'sf_bq350': 0, 'sf_bq354': 0, 'sf_bq289': 0, 'sf_bq352': 0, 'sf_bq300': 1, 'sf_bq293': 0, 'sf_bq280': 1, 'sf_bq301': 1, 'sf_bq356': 0, 'sf_bq357': 1, 'sf_bq358': 0, 'sf_bq360': 0, 'sf_bq303': 0, 'sf_bq363': 1, 'sf_bq370': 0, 'sf_bq372': 1, 'sf_bq373': 0, 'sf_bq375': 1, 'sf_bq374': 0, 'sf_bq377': 1, 'sf_bq376': 0, 'sf_bq380': 1, 'sf_bq379': 1, 'sf_bq188': 0, 'sf_bq392': 1, 'sf_bq391': 0, 'sf_bq307': 1, 'sf_bq394': 1, 'sf_bq395': 0, 'sf_bq396': 1, 'sf_bq397': 0, 'sf_bq398': 1, 'sf_bq400': 1, 'sf_bq326': 0, 'sf_bq402': 1, 'sf_bq403': 1, 'sf_bq399': 1, 'sf_bq410': 1, 'sf_bq345': 1, 'sf_bq407': 0, 'sf_bq406': 0, 'sf_bq411': 0, 'sf_bq413': 0, 'sf_bq414': 0, 'sf_bq417': 1, 'sf_bq214': 0, 'sf_bq412': 1, 'sf_bq418': 0, 'sf_bq347': 1, 'sf_bq348': 0, 'sf_bq423': 0, 'sf_bq419': 1, 'sf_bq425': 0, 'sf_bq355': 1, 'sf_bq340': 0, 'sf_bq426': 0, 'sf_bq359': 0, 'sf_bq427': 0, 'sf_bq429': 0, 'sf_bq432': 1, 'sf_bq444': 1, 'sf_bq445': 0, 'sf_bq361': 1, 'sf_bq451': 0, 'sf_bq366': 0, 'sf_bq371': 1, 'sf_bq453': 0, 'sf_bq362': 1, 'sf_bq456': 0, 'sf_bq455': 0, 'sf_bq415': 1, 'sf_bq390': 0, 'sf_bq383': 1, 'sf_bq460': 0, 'sf_bq461': 0, 'sf_bq389': 0, 'sf_bq457': 0, 'sf_ga001': 1, 'sf_bq462': 0, 'sf_bq302': 0, 'sf_ga004': 1, 'sf_ga003': 1, 'sf_ga006': 0, 'sf_ga008': 0, 'sf_ga007': 0, 'sf_ga010': 1, 'sf_ga011': 1, 'sf_bq309': 1, 'sf_bq416': 0, 'sf_ga012': 0, 'sf_ga013': 0, 'sf_ga014': 0, 'sf_ga018': 0, 'sf_bq421': 1, 'sf_bq420': 0, 'sf_bq422': 1, 'sf_bq424': 0, 'sf_ga017': 1, 'sf_ga028': 0, 'sf_ga030': 1, 'sf_bq442': 1, 'sf_ga031': 1, 'sf_local003': 1, 'sf_local004': 0, 'sf_local007': 0, 'sf_local008': 1, 'sf_local009': 1, 'sf_local010': 0, 'sf_local015': 0, 'sf_local017': 0, 'sf_bq430': 0, 'sf_bq450': 0, 'sf_local020': 1, 'sf_local021': 0, 'sf_local023': 1, 'sf_bq452': 1, 'sf_local025': 1, 'sf_local026': 0, 'sf_bq393': 0, 'sf_local028': 1, 'sf_local029': 0, 'sf_local030': 1, 'sf_local031': 1, 'sf_local032': 0, 'sf_local034': 0, 'sf_local037': 0, 'sf_bq454': 1, 'sf_local035': 0, 'sf_local038': 1, 'sf_local039': 1, 'sf_local040': 1, 'sf_local041': 1, 'sf_local049': 1, 'sf_local050': 0, 'sf_local054': 0, 'sf_local056': 0, 'sf_local059': 1, 'sf_local060': 0, 'sf_local061': 0, 'sf_local062': 1, 'sf_bq459': 0, 'sf_bq458': 0, 'sf_ga009': 0, 'sf_ga002': 0, 'sf_ga019': 0, 'sf_ga005': 0, 'sf_local065': 1, 'sf_local064': 0, 'sf_local067': 1, 'sf_local071': 1, 'sf_local068': 1, 'sf_local072': 1, 'sf_local070': 0, 'sf_local066': 0, 'sf_ga021': 0, 'sf_ga032': 0, 'sf_local018': 1, 'sf_ga025': 0, 'sf_ga022': 0, 'sf_local077': 1, 'sf_local002': 1, 'sf_local073': 0, 'sf_local075': 0, 'sf_local078': 1, 'sf_local085': 0, 'sf_local081': 1, 'sf_local022': 1, 'sf_local024': 0, 'sf_local019': 1, 'sf_local096': 0, 'sf_local098': 0, 'sf_local130': 0, 'sf_ga020': 0, 'sf_local100': 0, 'sf_local128': 1, 'sf_local114': 1, 'sf_local132': 0, 'sf_local131': 0, 'sf_local133': 1, 'sf_local163': 1, 'sf_local058': 1, 'sf_local169': 0, 'sf_local141': 0, 'sf_local168': 1, 'sf_local171': 0, 'sf_local097': 0, 'sf_local157': 0, 'sf_local156': 0, 'sf_local167': 0, 'sf_local198': 0, 'sf_local195': 1, 'sf_local074': 0, 'sf_local193': 0, 'sf_local055': 1, 'sf_local194': 0, 'sf_local099': 1, 'sf_local197': 1, 'sf_local196': 0, 'sf_local199': 1, 'sf_local063': 1, 'sf_local170': 1, 'sf_local152': 1, 'sf_local218': 1, 'sf_local202': 1, 'sf_local210': 0, 'sf_local201': 0, 'sf_local212': 1, 'sf_local262': 0, 'sf_local219': 1, 'sf_local209': 1, 'sf_local270': 0, 'sf_local272': 0, 'sf_local274': 0, 'sf_local220': 1, 'sf_local228': 1, 'sf_local221': 1, 'sf_local273': 0, 'sf_local230': 1, 'sf_local244': 1, 'sf_local258': 1, 'sf_local229': 0, 'sf_local269': 0, 'sf_local264': 1, 'sf_local275': 0, 'sf_local263': 1, 'sf_local277': 0, 'sf_local283': 1, 'sf_local284': 1, 'sf_local279': 1, 'sf_local297': 0, 'sf_local259': 0, 'sf_local299': 0, 'sf_local285': 0, 'sf_local311': 0, 'sf_local298': 0, 'sf_local286': 0, 'sf_local301': 1, 'sf_local310': 1, 'sf_local330': 0, 'sf_local300': 1, 'sf_local329': 0, 'sf_local302': 1, 'sf_local331': 0, 'sf_local344': 0, 'sf_local335': 0, 'sf_local309': 0, 'sf_local336': 0, 'sf_local358': 0, 'sf_local355': 1, 'sf_local356': 0, 'sf_local354': 0, 'sf_local360': 0, 'sf_bq441': 0}
-Final score: 0.40699815837937386, Correct examples: 221, Total examples: 543
-Real score: 0.4040219378427788, Correct examples: 221, Total examples: 547
-Execution results saved to: /Users/yirenliu/Programming/Spider2/methods/spider-agent-tc/results/gpt-5.2_temp0.7_rounds25_rollout1_exp-yiren-all/sql_csv
-Correct IDs saved to: /Users/yirenliu/Programming/Spider2/methods/spider-agent-tc/results/gpt-5.2_temp0.7_rounds25_rollout1_exp-yiren-all/sql.csv
